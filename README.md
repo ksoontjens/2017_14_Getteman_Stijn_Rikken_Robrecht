@@ -1,1 +1,3 @@
-<img src="start.bmp">
+Memory game in pokemon thema.
+
+Zoek dezelfde pokemon.
