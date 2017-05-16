@@ -6,6 +6,7 @@ package hellotvxlet;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Image;
 import org.dvb.ui.DVBColor;
 import org.havi.ui.HComponent;
 
@@ -14,40 +15,43 @@ public class Player extends HComponent {
     boolean active;
     int x=0, y=0,width=0,height=0,score=0;
     String text;
+Image img;
 
-    public Player(String text, int x, int y, int width, int height) {
+    public Player(String text,String imgString, int x, int y, int width, int height) {
         this.setBounds(x, y, width, height);
         this.x = x;
         this.y = y;
         this.width=width;
         this.height=height;
         this.text = text;
-        Deactive();
+        this.img = this.getToolkit().getImage(imgString);
+        Deactivate();
       }
 
-    public void Paint(Graphics g) {
+    public void paint(Graphics g) {
         if (active==true) {
-            g.setColor(new DVBColor(0, 151, 0, 255));
+            g.setColor(Color.GREEN);
         } else {
-            g.setColor(Color.BLUE);
+            g.setColor(Color.WHITE);
         }
         g.fillRect(0, 0, width, height);
-        g.setColor(Color.WHITE);
-        g.drawString(text, 10, 40);
-        g.drawString(Integer.toString(score), 10, 70);
+        g.drawImage(img, 5, 13, this);
+        g.setColor(Color.ORANGE);
+        g.drawString(text, 45, 40);
+        g.drawString(Integer.toString(score), 45, 70);
     }
 
     public void Scored() {
-        score=+1;
+        score++;
         repaint();
     }
 
-    public void Active() {
+    public void Activate() {
         active = true;
         repaint();
     }
 
-    public void Deactive() {
+    public void Deactivate() {
         active = false;
         repaint();
     }

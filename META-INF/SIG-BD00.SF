@@ -1,29 +1,23 @@
 Signature-Version: 1.0
 Created-By: 1.6.0_16 (Sun Microsystems Inc.)
 BDJ-Signature-Version: 1.0
-SHA1-Digest-Manifest: ffSPbRmVgGzTxwWZbXpEvGpNgwU=
+SHA1-Digest-Manifest: 9NJOtdqOfNIYyJkezf215+Wa9aY=
 
 Name: hellotvxlet/Card.class
-SHA1-Digest: EXjoWV958/aLFQxqE00VMHaDBUM=
+SHA1-Digest: HGW8rr/UThbskkdGZe1XQW6SBuw=
 
 Name: hellotvxlet/HelloTVXlet.class
-SHA1-Digest: FAaFk5vK4bRyBebNSUAymx9wY6E=
+SHA1-Digest: AIPAbXDqtwKkT8eMckVso0d19dM=
 
 Name: hellotvxlet/HelloTVXlet$Combo.class
 SHA1-Digest: G2NO6ZRQuiWW64UzI2zFn2+zZm8=
 
-Name: hellotvxlet/Score$PlayerScore.class
-SHA1-Digest: of4ir7pv/RY3hE/y+pnBx69rhC8=
-
-Name: hellotvxlet/Score$1.class
-SHA1-Digest: u8st8POOXm5n/i3Di69M1aMf1sc=
+Name: hellotvxlet/HelloTVXlet$CardCombo.class
+SHA1-Digest: Sy3whnGyEWFkwdOPBdw3JG2ABZU=
 
 Name: hellotvxlet/bluray.HelloTVXlet.perm
 SHA1-Digest: Iz2EmX/hIvVXbO3PX0e6hezSY28=
 
-Name: hellotvxlet/Score.class
-SHA1-Digest: SNFvW3jNg3Zy44yCcBIxAj1Fvm0=
-
 Name: hellotvxlet/Player.class
-SHA1-Digest: WtQPGGl2efBhYwzIgXUvg4gcccU=
+SHA1-Digest: z4QWxHGRKSOTV73vsfRl2MAVuR8=
 
