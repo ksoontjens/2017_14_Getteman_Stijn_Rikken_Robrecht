@@ -1,26 +1,6 @@
 package hellotvxlet;
 
 import java.awt.Color;
-import java.awt.MediaTracker;
-import java.awt.event.ActionEvent;
-import java.util.Arrays;
-import java.util.Collections;
-import javax.tv.xlet.Xlet;
-import javax.tv.xlet.XletContext;
-import javax.tv.xlet.XletStateChangeException;
-import org.havi.ui.HComponent;
-import org.havi.ui.HScene;
-import org.havi.ui.HSceneFactory;
-import org.havi.ui.HVisible;
-import org.havi.ui.event.HActionListener;
-import java.awt.Image;
-import org.havi.ui.HBackgroundDevice;
-import org.havi.ui.HBackgroundImage;
-import org.havi.ui.HScreen;
-
-package hellotvxlet;
-
-import java.awt.Color;
 import java.awt.Image;
 import java.awt.MediaTracker;
 import org.havi.ui.HGraphicButton;
