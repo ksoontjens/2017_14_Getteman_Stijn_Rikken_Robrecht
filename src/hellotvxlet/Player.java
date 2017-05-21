@@ -7,7 +7,6 @@ package hellotvxlet;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
-import org.dvb.ui.DVBColor;
 import org.havi.ui.HComponent;
 
 public class Player extends HComponent {

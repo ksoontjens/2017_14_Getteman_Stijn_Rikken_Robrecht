@@ -1,6 +1,5 @@
 package hellotvxlet;
 
-import java.awt.Color;
 import java.awt.MediaTracker;
 import java.awt.event.ActionEvent;
 import java.util.Arrays;
@@ -11,12 +10,9 @@ import javax.tv.xlet.XletStateChangeException;
 import org.havi.ui.HComponent;
 import org.havi.ui.HScene;
 import org.havi.ui.HSceneFactory;
-import org.havi.ui.HVisible;
 import org.havi.ui.event.HActionListener;
 import java.awt.Image;
-import org.havi.ui.HBackgroundDevice;
-import org.havi.ui.HBackgroundImage;
-import org.havi.ui.HScreen;
+
 
 /**
  *
@@ -179,7 +175,7 @@ public class HelloTVXlet extends HComponent implements Xlet, HActionListener
          turnedCards[countTurned] = cards[pressedCard];
          if(countTurned == 1)
          {
-             countTurned--;
+             countTurned = -1;
              if(turnedCards[0].pair== turnedCards[1].pair)
              {
                  players[activePlayer].Scored();
