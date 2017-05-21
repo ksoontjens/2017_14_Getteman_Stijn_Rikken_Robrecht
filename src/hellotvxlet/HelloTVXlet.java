@@ -169,10 +169,46 @@ public class HelloTVXlet extends HComponent implements Xlet, HActionListener
     public void destroyXlet(boolean unconditional) throws XletStateChangeException {
     }
 
-    public void actionPerformed(ActionEvent event) {
-        
-
-                }
-            }
+    public void actionPerformed(ActionEvent event) 
+    {
+     int pressedCard = Integer.parseInt(event.getActionCommand());
+     if(!cards[pressedCard].blocked && !cards[pressedCard].turned)
+     {
+         cards[Integer.parseInt(event.getActionCommand())].click();
+         countTurned++;
+         turnedCards[countTurned] = cards[pressedCard];
+         if(countTurned == 1)
+         {
+             countTurned--;
+             if(turnedCards[0].pair== turnedCards[1].pair)
+             {
+                 players[activePlayer].Scored();
+                 turnedCards[0].block();
+                 turnedCards[1].block();
+             }
+             else
+             {
+                 players[activePlayer].Deactivate();
+                 activePlayer++;
+                 if(activePlayer >= players.length)
+                 {
+                     activePlayer = 0;
+                 }
+                 players[activePlayer].Activate();
+                 try
+                 {
+                     Thread.sleep(500);
+                 }
+                 catch(InterruptedException exception)
+                 {
+                     Thread.currentThread().interrupt();
+                 }
+                 turnedCards[0].reset();
+                 turnedCards[1].reset();
+             }
+         }
+     }
+    }
+  }
         
     
